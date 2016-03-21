@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Coastline Deals </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="//www.google.fr/jsapi"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/flags.css" rel="stylesheet" />
+  <script src="js/jquery.flagstrap.min.js"></script>
+  <link href="css/custom.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand " href="./index.html">
+          <img src="img/logo-blanc.png" id="logo" class="img-responsive" alt="Logo de la société CoastLine Deals">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href=""> Sign In </a> </li>
+          <li><a href="" data-toggle="modal" data-target=".bs-example-modal-lg"> Sign Up </a> </li>
+          <li>
+            <a href="#" id="french"> <img src="img/france.png" alt="" class="img-responsive" /> </a>
+          </li>
+          <li>
+            <a href="#" id="belgian"> <img src="img/belgique.png" alt="" class="img-responsive" /> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- .NavBar -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="text-center">
+        <div class="headerCover">
+          <h1>This Site is a Prototype, still under construction !</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .header img cover -->
+
+  <div id="filter" data-spy="affix" data-offset-top="360">
+    <!-- Begin of filter -->
+    <div class="container">
+      <div class="row">
+        <a class="btn btn-default pull-left " href="./index.html"> Home </a>
+        <div class="dropdown pull-left">
+          <button class="btn btn-default dropdown-toggle marginRight" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            For Night
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#"> Bed and Breakfast </a></li>
+            <li><a href="#"> Hôtel </a></li>
+            <li><a href="#"> Camping </a></li>
+            <li><a href="#"> Cottage</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown pull-left ">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            For Eat
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a href="#"> Restaurant </a></li>
+            <li><a href="#"> Brasserie </a></li>
+            <li><a href="#"> Teahouse</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown pull-left">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Shopping
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#"> Commercial Center </a></li>
+            <li><a href="#"> Local Product </a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown pull-left ">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Activities
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#"> Museum </a></li>
+            <li><a href="#"> Theatre </a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"> Adrenaline Rush </a></li>
+            <li><a href="#"> Waterpark </a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown pull-left">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Transport
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#"> Car location </a></li>
+            <li><a href="#"> Ferry </a></li>
+            <li><a href="#"> Cycle </a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown pull-left">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Sport
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#"> Windsurf </a></li>
+            <li><a href="#"> Horse </a></li>
+            <li><a href="#"> Cycle </a></li>
+            <li><a href="#"> Boat </a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown pull-left">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Wellness
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#"> Water cure </a></li>
+          </ul>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-pushpin"></span>
+          <input type="text" class="form-control" placeholder="Select your destination" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <!-- .row -->
+    </div>
+  </div>
+  <!-- .filter Bar -->
+  <div class="container">
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="signUp" >
+      <!-- formulaire -->
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <form class="form-horizontal" action="class/createUser.php" method="post">
+            <div class="form-group">
+              <label class="col-md-2 control-label"> Country </label>
+              <div class="col-md-9">
+                <div class="form-group">
+                  <div class="flagstrap" data-input-name="country"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> Username </label>
+              <div class="col-md-9">
+                <input type="text" class="form-control signUpInput" name="username" required="true">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> Email </label>
+              <div class="col-md-9">
+                <input type="email" class="form-control signUpInput" name="email" required="true">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> Password </label>
+              <div class="col-md-9">
+                <input type="password" class="form-control signUpInput" name="password" required="true">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2 "> </div>
+              <button type="submit" class="signUpButton" name="signup"> Sign up </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .Sign up modal -->
+
+
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center" id="firstTitle"> We have everything you need on the " Côte d'Opale" ! </h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Restauration/1.jpg" class="img-responsive" alt="" />
+        <h4> Le Bon Saumon </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Boulogne sur Mer </p>
+        <div class="overlay">
+          <h1> -10 % </h1>
+          <h4> With a reservation for 4 people </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Restauration/2.jpg" class="img-responsive" alt="" />
+        <h4> La Bonne Moule </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Calais </p>
+        <div class="overlay">
+          <h1> -10 % </h1>
+          <h4> With a reservation for 4 people </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Restauration/3.jpg" class="img-responsive" alt="" />
+        <h4> La Bonne Coquille </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Le Touquet </p>
+        <div class="overlay">
+          <h1> -10 % </h1>
+          <h4> With a reservation for 4 people </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Restauration/4.jpg" class="img-responsive" alt="" />
+        <h4> Le Beau Bar </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Le Touquet </p>
+        <div class="overlay">
+          <h1> -10 % </h1>
+          <h4> With a reservation for 4 people </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+    </div>
+    <!-- .row -->
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Hotel/1.jpg" class="img-responsive" alt="" />
+        <h4> Le Bel Estuaire </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Le Crotoy </p>
+        <div class="overlay">
+          <h1> -30 % </h1>
+          <h4> For an excursion with a guide </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Hotel/2.jpg" class="img-responsive" alt="" />
+        <h4> La Belle Plage </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Calais </p>
+        <div class="overlay">
+          <h1> -30 % </h1>
+          <h4> For an excursion with a guide </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Hotel/3.jpg" class="img-responsive" alt="" />
+        <h4> La Belle Vue </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Hardelot </p>
+        <div class="overlay">
+          <h1> -30 % </h1>
+          <h4> For an excursion with a guide </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-6 caption">
+        <img src="img/Hotel/4.jpg" class="img-responsive" alt="" />
+        <h4> Le Beau Cap </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p class="citys"> Cap Blanc Nez </p>
+        <div class="overlay">
+          <h1> -30 % </h1>
+          <h4> For an excursion with a guide </h4>
+          <a href="test.html" class="dealButton" role="button"> Deal </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/script.js">
+  </script>
+</body>
+
+</html>

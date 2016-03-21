@@ -1,0 +1,208 @@
+/*************************************************************************************/
+/*                       Initialisation                                  */
+/*************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,300);
+
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+}
+
+/*************************************************************************************/
+/*                       Header                                                      */
+/*************************************************************************************/
+
+.navbar-default {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  background-color: transparent;
+  border: none;
+}
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 1em;
+  padding: 0
+}
+#logo {
+  max-height: 2em;
+  margin-top: 5px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.headerCover {
+  height: 22rem;
+  width: 100%;
+  background: url('../img/header2.jpg') center fixed no-repeat;
+  background-size: cover;
+}
+.headerCover h1 {
+  position: relative;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+}
+.navbar-default .navbar-nav > li > a > img {
+  max-height: 19px;
+}
+#french {
+  padding-right: 7px;
+}
+#belgian {
+  padding-left: 7px;
+}
+
+/*************************************************************************************/
+/*                       Filter                                                      */
+/*************************************************************************************/
+
+#filter {
+  background-color: #eaedf1;
+  z-index: 100;
+  width: 100%;
+}
+.affix {
+  top: 0;
+}
+.btn-default , .btn-default:hover , .btn-default:focus {
+  background-color: #eaedf1;
+}
+.btn-default2 {
+  background-color: white;
+}
+.btn-default {
+  margin-right: 2em;
+  border: none;
+}
+.input-group {
+  /*border: none;*/
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {
+  border: none;
+  color: white;
+  outline: none;
+}
+.input-group-addon, .form-control{
+  border: none;
+  transition: none;
+}
+.form-control {
+  background: transparent;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/*************************************************************************************/
+/*                       Caption                                                     */
+/*************************************************************************************/
+
+.caption {
+  position: relative;
+  height: 18em;
+  margin-bottom: 2em;
+}
+.overlay {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: calc(100% - 30px);
+  padding: 0 15px;
+  background-color: rgba(13, 14, 13, 0.85);
+  top: 0;
+  left: 15px;
+  color: white;
+}
+.overlay h1 {
+  margin-top: 1.5em;
+}
+.dealButton, .signUpButton {
+  position: absolute;
+  padding: 0.5em;
+  width: 8em;
+  background-color: rgb(23, 133, 136);
+  border: 2px white solid;
+  color: white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2em;
+  font-size: 1.2rem;
+}
+.overlay a, .overlay a:focus, .comButton a, .comButton a:focus {
+    color: white;
+    text-decoration: none;
+}
+.citys {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/*************************************************************************************/
+/*                       Sign up Modal                                               */
+/*************************************************************************************/
+
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+.modal-open {
+  padding-right: 0 !important;
+}
+.signUpButton {
+  position: relative;
+  margin-bottom: 0;
+}
+.signUpInput {
+  border-radius: 0;
+  border-bottom: 1px solid rgba(205, 208, 205, 0.69);
+}
+
+/*************************************************************************************/
+/*                       Commercial page                                             */
+/*************************************************************************************/
+
+#firstTitle {
+  margin: 1em 0 2em 0;
+}
+.comButton {
+  padding: 1em;
+  font-size: 1.2rem;
+  width: 12em;
+  background-color: rgb(23, 133, 136);
+  color: white;
+  border: none;
+}
+.comButton:focus, .comButton:active {
+  outline: none;
+}
+#dealDetail {
+  margin: 2em 0;
+}
+#dealDetail p, #offLink p {
+  text-align: justify;
+}
+#offLink h3 {
+  margin-top: 0;
+}
+#offAdress {
+  margin-top: 2em;
+}
+#offAdress span {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+.timerCount {
+  color:rgba(219, 51, 34, 0.93);
+}
+.timerCount span {
+  vertical-align:middle;
+  margin-right:0.5em;
+}
